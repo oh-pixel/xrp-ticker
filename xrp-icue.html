@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>XRP Ticker</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 100%; height: 100%; background: #131722; overflow: hidden; }
+  .tv-widget { width: 100%; height: 100%; }
+</style>
+</head>
+<body>
+<!-- TradingView Advanced Chart Widget -->
+<div class="tv-widget">
+  <div class="tradingview-widget-container" style="height:100%;width:100%">
+    <div class="tradingview-widget-container__widget" style="height:calc(100% - 32px);width:100%"></div>
+    <div class="tradingview-widget-copyright">
+      <a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank">
+        <span class="blue-text">Track all markets on TradingView</span>
+      </a>
+    </div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+    {
+      "autosize": true,
+      "symbol": "BITSTAMP:XRPUSD",
+      "interval": "15",
+      "timezone": "Europe/Zurich",
+      "theme": "dark",
+      "style": "1",
+      "locale": "de_DE",
+      "backgroundColor": "#131722",
+      "gridColor": "rgba(0, 198, 255, 0.04)",
+      "hide_top_toolbar": false,
+      "hide_legend": false,
+      "save_image": false,
+      "calendar": false,
+      "hide_volume": false,
+      "support_host": "https://www.tradingview.com"
+    }
+    </script>
+  </div>
+</div>
+</body>
+</html>
